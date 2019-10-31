@@ -1,4 +1,6 @@
 
+/*font-family: 'Libre Franklin', sans-serif;*/
+
 #contenidos{
     width: 1300px;
     height: auto;
@@ -20,7 +22,7 @@ h1{
     text-align: right;
     margin-right: 145px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 h2{
@@ -29,7 +31,7 @@ h2{
     font-size: 40px;
     text-align: center;
     color: white;
-    margin-top: 0px;
+    margin-top: 15px;
 }
 h3{
     margin-top: 15px;
@@ -58,18 +60,8 @@ h5{
     margin-bottom: 5px;
     
 }
-
-h6{
-    margin-top: 15px;
-    margin-left: 30px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 25px;
-    margin-bottom: 0px;
-    text-align: left;
-    color: #F0B429;
-}
 header{
-    background-image: url("https://eacespedesre.github.io/OVI_Diseno_de_sitios_web/css/../img/UNAD1.png");
+    background-image: url(../img/UNAD1.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 200px 145px;
@@ -90,13 +82,13 @@ nav{
     display: block;
 }
 ul{
+    
     margin: 0px;
     padding: 0px;
     display: inline-block;
 }    
  
-nav ul li{
-    z-index: 1 !important;
+ li{ 
     float: left;
     list-style-type: none;
     background-color: #F0B429;
@@ -110,34 +102,8 @@ nav ul li{
     padding-top: 8px;
     padding-bottom: 5px;
     }
-nav ul li ul li{
-    float: none;
-    position: relative;
-}
-article ul{
-    background-color: transparent;
-    padding: 0;
-    margin-left: 60px;
-    margin-top: 20px;
-    display: block;
 
-    
-    
-}
 
-article ul li{
-    background-color: transparent;
-    font-size: 20px;
-    position: relative;
-    float: none;
-    margin: 1px;
-    padding: 0px;
-    list-style-type: circle;
-    color: white;
-    text-align: justify;
-    
-
-}
  
 li ul{
        position: inherit;
@@ -155,37 +121,32 @@ li:hover ul{
     }
 
 section{
+    
     width: 1300px;
     /*background-color: white;*/
     height: auto;
-    /*float: left;*/
+    z-index: -1;
+    float: left;
 }
 article{
-    width: 980px;
-    /*float: left;*/
-    margin-right: 30px;
-    margin-left: 10px;
-    z-index: 0;
-    position: relative;
+    width: 700px;
+    float: left;
 }
 aside{
-    float: right;
-    z-index:  -1 !important;
-    margin-right: 20px;
-    position: absolute;
-    right: 0;
+    /*background-color: blue;*/
+    width: 280px;
+    float: left;
+    margin-left: 20px;
+    height: 490px;
+    padding-left: 19px;
+    
+    /*margin-left: 20px;*/
 }
 figure{
     margin: 0;
     padding: 0;
-    text-align: center;
-}
 
-figure img{
-    width: 850px;
-    height: auto;
 }
-
 img{
     
     width: 250px;
@@ -195,25 +156,19 @@ hr{
     z-index: -1;
     background-color: #005883;
     border-color: #F0B429;
-    left: 1000px;
+    left: 714px;
     width:4px;
     height: 420px;
+    top: 290px;
     position: absolute;
     margin: 0;
 }
 p{
-    z-index: 0;
     color: white;
     font-size: 20px;
     text-align: justify;
     margin-left: 10px;
 
-}
-iframe{
-    margin-left: 267.5px;
-    align-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 footer{
@@ -221,7 +176,8 @@ footer{
     height: 70px;
     background-color: #F0B429;
     width: 1300px;
-    /*top: 2500px;*/
+    clear: both;
+    top: 710px;
 }
 footer img{
     margin: 0px;
@@ -229,29 +185,22 @@ footer img{
     width: auto;
     
 }
+/*clases*/
+.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}
+
+/*color de el texto en el menu desplegable*/
+/*----------------------------------------*/
 .menu:link{color: white; text-decoration:none}
 .menu:visited{color: white; text-decoration:none}    
 .menu:hover{ color: #005883;text-decoration:none}
 .menu:active{color: white; text-decoration:none}
 .menu:focus{color: white; text-decoration:none}
 
-.articulo:link{color: white; text-decoration:none; font-style: italic}
-.articulo:visited{color: white; text-decoration:none; font-style: italic}    
-.articulo:hover{ color: black;text-decoration:none; font-style: italic}
-.articulo:active{color: white; text-decoration:none; font-style: italic}
-.articulo:focus{color: white; text-decoration:none; font-style: italic}
+/*seudo clases*/
 
-.foto{width: 350px; height: auto;}
-.texto{width: inherit; color:white; font-size: 25px;}
-
-article ul:hover{
-    background-color: transparent; 
-}
-article ul li:hover{
-    background-color: transparent;
-    
-}
 li:hover{
     background-color: #F0B429;
-    z-index: 1 !important;
+    z-index: 1
+    
 }
