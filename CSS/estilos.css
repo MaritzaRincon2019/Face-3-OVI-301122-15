@@ -253,3 +253,6 @@ li:hover{
     z-index: 1 !important;
     
 }
+button{
+    nav-index: auto;
+    }
